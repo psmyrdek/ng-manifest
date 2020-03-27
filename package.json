@@ -7,6 +7,7 @@
     "type": "git",
     "url": "https://github.com/psmyrdek/ng-manifest.git"
   },
+  "keywords": ["angular", "bundle", "static files"],
   "homepage": "https://github.com/psmyrdek/ng-manifest",
   "readme": "https://github.com/psmyrdek/ng-manifest/blob/master/README.md",
   "bin": {
