@@ -1,0 +1,28 @@
+{
+  "name": "ng-manifest",
+  "version": "0.0.1",
+  "description": "Generate JSON manifest based on Angular build artifacts",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psmyrdek/ng-manifest.git"
+  },
+  "homepage": "https://github.com/psmyrdek/ng-manifest",
+  "readme": "https://github.com/psmyrdek/ng-manifest/blob/master/README.md",
+  "bin": {
+    "ng-manifest": "./bin/ng-manifest.js"
+  },
+  "files": [
+    "bin/ng-manifest.js"
+  ],
+  "scripts": {
+    "test": "cd test/ng-test-app && ng build && cd ../.. && npm run ng-manifest",
+    "ng-manifest": "node ./bin/ng-manifest.js --root test/ng-test-app"
+  },
+  "author": "psmyrdek",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "7.1.6",
+    "glob-promise": "3.4.0"
+  }
+}
