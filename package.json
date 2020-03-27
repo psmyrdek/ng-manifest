@@ -17,8 +17,7 @@
     "bin/ng-manifest.js"
   ],
   "scripts": {
-    "test": "cd test/ng-test-app && ng build && cd ../.. && npm run ng-manifest",
-    "ng-manifest": "node ./bin/ng-manifest.js --root test/ng-test-app"
+    "test": "cd test/ng-test-app && ng build && cd ../.. && node ./bin/ng-manifest.js --root test/ng-test-app"
   },
   "author": "psmyrdek",
   "license": "MIT",
