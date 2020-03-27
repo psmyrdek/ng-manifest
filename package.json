@@ -1,13 +1,17 @@
 {
   "name": "ng-manifest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate JSON manifest based on Angular build artifacts",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/psmyrdek/ng-manifest.git"
   },
-  "keywords": ["angular", "bundle", "static files"],
+  "keywords": [
+    "angular",
+    "bundle",
+    "static files"
+  ],
   "homepage": "https://github.com/psmyrdek/ng-manifest",
   "readme": "https://github.com/psmyrdek/ng-manifest/blob/master/README.md",
   "bin": {
