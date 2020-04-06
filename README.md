@@ -8,7 +8,13 @@ Generate JSON manifest based on Angular build artifacts
 
 ## Usage 
 
-`ng-manifest --root <ANGULAR_PROJECT_ROOT_DIR>`
+```
+$ ng-manifest --root <ANGULAR_PROJECT_ROOT_DIR>
+
+Options:
+--root   [required] Angular project root
+--output [optional] Output directory. Default ${root}/dist
+```
 
 ## Output
 

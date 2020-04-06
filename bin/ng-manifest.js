@@ -5,13 +5,14 @@
 const glob = require('glob-promise')
 const fs = require('fs')
 const {join} = require('path')
+const argv = require('minimist')
 
 ;(async () => {
 
     const STATS_FILENAME = 'ng-manifest.json'
 
-    const projectRoot = process.argv[3]
-    if (!projectRoot) {
+    const {root, output} = argv(process.argv)
+    if (!root) {
         throw new Error('--root param is required!')
     }
 
@@ -19,7 +20,7 @@ const {join} = require('path')
         absolute: false
     }
 
-    const projectPath = join(process.cwd(), projectRoot)
+    const projectPath = join(process.cwd(), root)
     const data = await glob(`${projectPath}/dist/**/+(*.js|*.css)`, options)
 
     const fileNames = data.map(path => {
@@ -63,7 +64,7 @@ const {join} = require('path')
         }
     }
 
-    const statsPath = join(projectPath, 'dist', STATS_FILENAME)
+    const statsPath = join(...(output ? [output] : [projectPath, 'dist']), STATS_FILENAME)
     fs.writeFile(statsPath, JSON.stringify(bundles, null, 2), err => {
         if (err) {
             console.error(err)
