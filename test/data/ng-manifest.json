@@ -1,0 +1,62 @@
+{
+  "stats": {
+    "js": {
+      "legacy": [
+        {
+          "src": "runtime-es5.0811dcefd377500b5b1a.js",
+          "type": "text"
+        },
+        {
+          "src": "polyfills-es5.1a3c78b07cd6f16c6e9a.js",
+          "type": "text"
+        },
+        {
+          "src": "scripts.df7307176fdd8155dc27.js",
+          "type": "text"
+        },
+        {
+          "src": "vendor-es5.14950dc164796d04b0b0.js",
+          "type": "text"
+        },
+        {
+          "src": "main-es5.e19d3e6fbfb1305fc58d.js",
+          "type": "text"
+        }
+      ],
+      "modern": [
+        {
+          "src": "runtime-es2015.0811dcefd377500b5b1a.js",
+          "type": "module"
+        },
+        {
+          "src": "polyfills-es2015.1f913f16a2d346cc8bdc.js",
+          "type": "module"
+        },
+        {
+          "src": "scripts.df7307176fdd8155dc27.js",
+          "type": "text"
+        },
+        {
+          "src": "vendor-es2015.14950dc164796d04b0b0.js",
+          "type": "module"
+        },
+        {
+          "src": "main-es2015.e19d3e6fbfb1305fc58d.js",
+          "type": "module"
+        }
+      ],
+      "files": {
+        "runtimeES5": "runtime-es5.0811dcefd377500b5b1a.js",
+        "runtimeES2015": "runtime-es2015.0811dcefd377500b5b1a.js",
+        "polyfillsES5": "polyfills-es5.1a3c78b07cd6f16c6e9a.js",
+        "polyfillsES2015": "polyfills-es2015.1f913f16a2d346cc8bdc.js",
+        "vendorES5": "vendor-es5.14950dc164796d04b0b0.js",
+        "vendorES2015": "vendor-es2015.14950dc164796d04b0b0.js",
+        "mainES5": "main-es5.e19d3e6fbfb1305fc58d.js",
+        "mainES2015": "main-es2015.e19d3e6fbfb1305fc58d.js",
+        "scripts": "scripts.df7307176fdd8155dc27.js"
+      }
+    },
+    "css": "styles.3ff695c00d717f2d2a11.css"
+  }
+}
