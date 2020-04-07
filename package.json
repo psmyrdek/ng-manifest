@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/psmyrdek/ng-manifest.git"
   },
+  "engines": {
+    "node": "12.16.1"
+  },
   "keywords": [
     "angular",
     "bundle",
