@@ -25,7 +25,9 @@
   ],
   "scripts": {
     "postinstall": "cd test/ng-test-app && npm install",
-    "test": "cd test/ng-test-app && ng build && cd ../.. && node ./bin/ng-manifest.js --root test/ng-test-app"
+    "test:create-manifest": "cd test/ng-test-app && npm run build && cd ../.. && node ./bin/ng-manifest.js --root test/ng-test-app",
+    "test:jest": "jest ./test/ng-manifest.test.js",
+    "test": "npm run test:create-manifest && npm run test:jest"
   },
   "author": "psmyrdek",
   "license": "MIT",
@@ -33,5 +35,9 @@
     "glob": "7.1.6",
     "glob-promise": "3.4.0",
     "minimist": "1.2.5"
+  },
+  "devDependencies": {
+    "jest": "25.2.7",
+    "jest-cli": "25.2.7"
   }
 }
