@@ -37,7 +37,7 @@
     "minimist": "1.2.5"
   },
   "devDependencies": {
-    "jest": "25.3.0",
+    "jest": "25.4.0",
     "jest-cli": "25.3.0"
   }
 }
