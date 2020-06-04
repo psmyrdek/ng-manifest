@@ -82,3 +82,7 @@ Options:
   }
 }
 ```
+
+## Credits
+
+Special thanks to [@smartrecruiters](https://github.com/smartrecruiters)
