@@ -1,6 +1,6 @@
 {
   "name": "ng-manifest",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Generate JSON manifest based on Angular build artifacts",
   "main": "index.js",
   "repository": {
