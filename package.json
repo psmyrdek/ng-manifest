@@ -24,7 +24,7 @@
     "bin/ng-manifest.js"
   ],
   "scripts": {
-    "postinstall": "cd test/ng-test-app && npm install",
+    "test:install": "cd test/ng-test-app && npm install",
     "test:create-manifest": "cd test/ng-test-app && npm run build && cd ../.. && node ./bin/ng-manifest.js --root test/ng-test-app",
     "test:jest": "jest ./test/ng-manifest.test.js",
     "test": "npm run test:create-manifest && npm run test:jest"
